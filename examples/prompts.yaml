@@ -1,0 +1,60 @@
+# - target: "van gogh" # what word for erasing the positive concept from
+#   positive: "van gogh" # concept to erase
+#   unconditional: "" # word to take the difference from the positive concept
+#   neutral: "" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 1.0
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 2
+- target: "person"
+  positive: "old person"
+  unconditional: ""
+  neutral: "person"
+  action: "enhance"
+  guidance_scale: 3.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2
+
+- target: "boy"
+  positive: "old person"
+  unconditional: ""
+  neutral: "boy"
+  action: "enhance"
+  guidance_scale: 3.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2
+  
+  
+- target: "girl"
+  positive: "old person"
+  unconditional: ""
+  neutral: "girl"
+  action: "enhance"
+  guidance_scale: 3.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2
+  
+- target: "man"
+  positive: "old person"
+  unconditional: ""
+  neutral: "man"
+  action: "enhance"
+  guidance_scale: 3.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2
+  
+  
+- target: "woman"
+  positive: "old person"
+  unconditional: ""
+  neutral: "woman"
+  action: "enhance"
+  guidance_scale: 3.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2

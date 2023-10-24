@@ -1,0 +1,47 @@
+- target: "realistic"
+  resolution: 512
+  batch_size: 3
+
+- target: "real life"
+  resolution: 512
+  batch_size: 3
+
+- target: "instagram"
+  resolution: 512
+  batch_size: 3
+
+- target: "real life, instagram"
+  resolution: 512
+  batch_size: 3
+
+- target: "realistic"
+  resolution: 640
+  batch_size: 2
+
+- target: "real life"
+  resolution: 640
+  batch_size: 2
+
+- target: "instagram"
+  resolution: 640
+  batch_size: 2
+
+- target: "real life, instagram"
+  resolution: 640
+  batch_size: 2
+
+- target: "realistic"
+  resolution: 768
+  batch_size: 1
+
+- target: "real life"
+  resolution: 768
+  batch_size: 1
+
+- target: "instagram"
+  resolution: 768
+  batch_size: 1
+
+- target: "real life, instagram"
+  resolution: 768
+  batch_size: 1

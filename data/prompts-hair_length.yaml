@@ -1,0 +1,45 @@
+- target: "hair " # what word for erasing the positive concept from
+  positive: "long hair" # concept to erase
+  unconditional: "" # word to take the difference from the positive concept
+  neutral: "hair" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: 4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: "hair " # what word for erasing the positive concept from
+  positive: "short hair" # concept to erase
+  unconditional: "" # word to take the difference from the positive concept
+  neutral: "hair" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: -4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+# - target: " girl" # what word for erasing the positive concept from
+#   positive: "girl, young age, cute, child" # concept to erase
+#   unconditional: "" # word to take the difference from the positive concept
+#   neutral: "girl" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: -1
+#   resolution: 512
+#   dynamic_resolution: true
+#   batch_size: 1
+# - target: " boy" # what word for erasing the positive concept from
+#   positive: "old aged man, wrinkled skin, gray hair" # concept to erase
+#   unconditional: "" # word to take the difference from the positive concept
+#   neutral: "boy" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 1
+#   resolution: 512
+#   dynamic_resolution: true
+#   batch_size: 1
+# - target: " boy" # what word for erasing the positive concept from
+#   positive: "boy, young age, cute, child" # concept to erase
+#   unconditional: "" # word to take the difference from the positive concept
+#   neutral: "boy" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: -1
+#   resolution: 512
+#   dynamic_resolution: true
+#   batch_size: 1

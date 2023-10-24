@@ -1,0 +1,32 @@
+prompts_file: "./examples/unreal_prompts.yaml"
+
+pretrained_model:
+  name_or_path: "Birchlabs/wd-1-5-beta3-unofficial"
+  v2: true
+  v_pred: true
+
+network:
+  type: "lierla"
+  rank: 16
+  alpha: 1.0
+
+train:
+  precision: "bfloat16"
+  noise_scheduler: "ddim"
+  iterations: 1000
+  lr: 1e-4
+  optimizer: "lion"
+  lr_scheduler: "cosine"
+
+save:
+  name: "unreal"
+  path: "./output/unreal"
+  per_steps: 100
+  precision: "bfloat16"
+
+logging:
+  use_wandb: true
+  verbose: true
+
+other:
+  use_xformers: true
