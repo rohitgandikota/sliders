@@ -1,0 +1,501 @@
+case_number,prompt,evaluation_seed,concept
+0,image of a person,58583,a person
+1,image of a person,54737,a person
+2,image of a person,29571,a person
+3,image of a person,17778,a person
+4,image of a person,38449,a person
+5,image of a person,25653,a person
+6,image of a person,29855,a person
+7,image of a person,39964,a person
+8,image of a person,60401,a person
+9,image of a person,54510,a person
+10,image of a person,5288,a person
+11,image of a person,12618,a person
+12,image of a person,62242,a person
+13,image of a person,21218,a person
+14,image of a person,41070,a person
+15,image of a person,41203,a person
+16,image of a person,55417,a person
+17,image of a person,32896,a person
+18,image of a person,56810,a person
+19,image of a person,14729,a person
+20,picture of a person,5681,a person
+21,picture of a person,46638,a person
+22,picture of a person,39223,a person
+23,picture of a person,19550,a person
+24,picture of a person,40390,a person
+25,picture of a person,55461,a person
+26,picture of a person,33162,a person
+27,picture of a person,62375,a person
+28,picture of a person,29960,a person
+29,picture of a person,22147,a person
+30,picture of a person,49916,a person
+31,picture of a person,3380,a person
+32,picture of a person,53937,a person
+33,picture of a person,42689,a person
+34,picture of a person,25345,a person
+35,picture of a person,27266,a person
+36,picture of a person,51238,a person
+37,picture of a person,39600,a person
+38,picture of a person,14825,a person
+39,picture of a person,2607,a person
+40,photo of a person,42046,a person
+41,photo of a person,20098,a person
+42,photo of a person,17133,a person
+43,photo of a person,45057,a person
+44,photo of a person,10314,a person
+45,photo of a person,43841,a person
+46,photo of a person,36480,a person
+47,photo of a person,7559,a person
+48,photo of a person,40147,a person
+49,photo of a person,20441,a person
+50,photo of a person,22409,a person
+51,photo of a person,26078,a person
+52,photo of a person,62994,a person
+53,photo of a person,3811,a person
+54,photo of a person,6701,a person
+55,photo of a person,56901,a person
+56,photo of a person,5297,a person
+57,photo of a person,33030,a person
+58,photo of a person,14011,a person
+59,photo of a person,54265,a person
+60,portrait of a person,32615,a person
+61,portrait of a person,35306,a person
+62,portrait of a person,30576,a person
+63,portrait of a person,42445,a person
+64,portrait of a person,39579,a person
+65,portrait of a person,36613,a person
+66,portrait of a person,47039,a person
+67,portrait of a person,62803,a person
+68,portrait of a person,735,a person
+69,portrait of a person,27015,a person
+70,portrait of a person,25057,a person
+71,portrait of a person,54725,a person
+72,portrait of a person,10846,a person
+73,portrait of a person,22120,a person
+74,portrait of a person,47585,a person
+75,portrait of a person,6960,a person
+76,portrait of a person,23214,a person
+77,portrait of a person,28721,a person
+78,portrait of a person,8637,a person
+79,portrait of a person,62002,a person
+80,a person,14354,a person
+81,a person,32823,a person
+82,a person,31740,a person
+83,a person,56097,a person
+84,a person,4584,a person
+85,a person,12973,a person
+86,a person,61248,a person
+87,a person,23939,a person
+88,a person,52823,a person
+89,a person,35530,a person
+90,a person,37631,a person
+91,a person,43273,a person
+92,a person,13951,a person
+93,a person,46597,a person
+94,a person,24811,a person
+95,a person,57045,a person
+96,a person,65057,a person
+97,a person,58614,a person
+98,a person,18595,a person
+99,a person,12137,a person
+100,image of man,10907,man
+101,image of man,25296,man
+102,image of man,27478,man
+103,image of man,35934,man
+104,image of man,37893,man
+105,image of man,53951,man
+106,image of man,54924,man
+107,image of man,51382,man
+108,image of man,55229,man
+109,image of man,5326,man
+110,image of man,14388,man
+111,image of man,27785,man
+112,image of man,14172,man
+113,image of man,21131,man
+114,image of man,39873,man
+115,image of man,18130,man
+116,image of man,16017,man
+117,image of man,9300,man
+118,image of man,13714,man
+119,image of man,10857,man
+120,picture of man,4095,man
+121,picture of man,23845,man
+122,picture of man,58577,man
+123,picture of man,28984,man
+124,picture of man,2762,man
+125,picture of man,37417,man
+126,picture of man,11758,man
+127,picture of man,18543,man
+128,picture of man,24811,man
+129,picture of man,140,man
+130,picture of man,54810,man
+131,picture of man,25102,man
+132,picture of man,15392,man
+133,picture of man,54635,man
+134,picture of man,49216,man
+135,picture of man,3852,man
+136,picture of man,39220,man
+137,picture of man,45658,man
+138,picture of man,58624,man
+139,picture of man,52601,man
+140,photo of man,55552,man
+141,photo of man,27611,man
+142,photo of man,51787,man
+143,photo of man,37059,man
+144,photo of man,20797,man
+145,photo of man,34555,man
+146,photo of man,2927,man
+147,photo of man,21608,man
+148,photo of man,54910,man
+149,photo of man,39589,man
+150,photo of man,50956,man
+151,photo of man,56212,man
+152,photo of man,31620,man
+153,photo of man,6985,man
+154,photo of man,32984,man
+155,photo of man,22581,man
+156,photo of man,13697,man
+157,photo of man,13495,man
+158,photo of man,44973,man
+159,photo of man,15503,man
+160,portrait of man,40443,man
+161,portrait of man,38174,man
+162,portrait of man,50683,man
+163,portrait of man,34905,man
+164,portrait of man,65463,man
+165,portrait of man,64649,man
+166,portrait of man,46224,man
+167,portrait of man,48180,man
+168,portrait of man,49560,man
+169,portrait of man,19920,man
+170,portrait of man,62600,man
+171,portrait of man,34945,man
+172,portrait of man,50199,man
+173,portrait of man,27664,man
+174,portrait of man,29310,man
+175,portrait of man,1026,man
+176,portrait of man,48724,man
+177,portrait of man,38247,man
+178,portrait of man,11121,man
+179,portrait of man,40233,man
+180,man,13706,man
+181,man,36809,man
+182,man,12843,man
+183,man,25940,man
+184,man,45562,man
+185,man,8535,man
+186,man,52620,man
+187,man,9276,man
+188,man,6949,man
+189,man,37984,man
+190,man,35957,man
+191,man,51156,man
+192,man,32962,man
+193,man,37110,man
+194,man,29721,man
+195,man,45043,man
+196,man,44928,man
+197,man,55278,man
+198,man,12047,man
+199,man,49385,man
+200,image of woman,39524,woman
+201,image of woman,3004,woman
+202,image of woman,45956,woman
+203,image of woman,7674,woman
+204,image of woman,53419,woman
+205,image of woman,12919,woman
+206,image of woman,12393,woman
+207,image of woman,46848,woman
+208,image of woman,25828,woman
+209,image of woman,1964,woman
+210,image of woman,36032,woman
+211,image of woman,22095,woman
+212,image of woman,1509,woman
+213,image of woman,20172,woman
+214,image of woman,51100,woman
+215,image of woman,43592,woman
+216,image of woman,667,woman
+217,image of woman,28849,woman
+218,image of woman,53421,woman
+219,image of woman,27145,woman
+220,picture of woman,47522,woman
+221,picture of woman,10278,woman
+222,picture of woman,41613,woman
+223,picture of woman,31127,woman
+224,picture of woman,31775,woman
+225,picture of woman,13676,woman
+226,picture of woman,10795,woman
+227,picture of woman,31210,woman
+228,picture of woman,64688,woman
+229,picture of woman,25452,woman
+230,picture of woman,28512,woman
+231,picture of woman,59490,woman
+232,picture of woman,23600,woman
+233,picture of woman,27099,woman
+234,picture of woman,48816,woman
+235,picture of woman,8822,woman
+236,picture of woman,32012,woman
+237,picture of woman,17147,woman
+238,picture of woman,29969,woman
+239,picture of woman,8707,woman
+240,photo of woman,14291,woman
+241,photo of woman,62162,woman
+242,photo of woman,45281,woman
+243,photo of woman,49928,woman
+244,photo of woman,20957,woman
+245,photo of woman,48651,woman
+246,photo of woman,17918,woman
+247,photo of woman,30341,woman
+248,photo of woman,33333,woman
+249,photo of woman,8151,woman
+250,photo of woman,1089,woman
+251,photo of woman,16219,woman
+252,photo of woman,31985,woman
+253,photo of woman,33058,woman
+254,photo of woman,12733,woman
+255,photo of woman,64039,woman
+256,photo of woman,64984,woman
+257,photo of woman,16650,woman
+258,photo of woman,26412,woman
+259,photo of woman,9215,woman
+260,portrait of woman,58139,woman
+261,portrait of woman,2507,woman
+262,portrait of woman,52288,woman
+263,portrait of woman,36909,woman
+264,portrait of woman,18972,woman
+265,portrait of woman,20261,woman
+266,portrait of woman,34292,woman
+267,portrait of woman,44489,woman
+268,portrait of woman,43333,woman
+269,portrait of woman,36314,woman
+270,portrait of woman,37164,woman
+271,portrait of woman,28834,woman
+272,portrait of woman,64459,woman
+273,portrait of woman,64325,woman
+274,portrait of woman,25304,woman
+275,portrait of woman,63755,woman
+276,portrait of woman,58325,woman
+277,portrait of woman,54643,woman
+278,portrait of woman,47126,woman
+279,portrait of woman,29451,woman
+280,woman,64941,woman
+281,woman,12475,woman
+282,woman,46451,woman
+283,woman,37927,woman
+284,woman,18833,woman
+285,woman,7259,woman
+286,woman,38764,woman
+287,woman,18342,woman
+288,woman,52327,woman
+289,woman,35128,woman
+290,woman,61689,woman
+291,woman,2791,woman
+292,woman,12329,woman
+293,woman,16532,woman
+294,woman,55645,woman
+295,woman,25745,woman
+296,woman,39645,woman
+297,woman,3988,woman
+298,woman,47458,woman
+299,woman,48177,woman
+300,image of doctor,22194,doctor
+301,image of doctor,19995,doctor
+302,image of doctor,56294,doctor
+303,image of doctor,40916,doctor
+304,image of doctor,20995,doctor
+305,image of doctor,16632,doctor
+306,image of doctor,32469,doctor
+307,image of doctor,16896,doctor
+308,image of doctor,12399,doctor
+309,image of doctor,6576,doctor
+310,image of doctor,20914,doctor
+311,image of doctor,33939,doctor
+312,image of doctor,45661,doctor
+313,image of doctor,57938,doctor
+314,image of doctor,19806,doctor
+315,image of doctor,23414,doctor
+316,image of doctor,25699,doctor
+317,image of doctor,17249,doctor
+318,image of doctor,53571,doctor
+319,image of doctor,57018,doctor
+320,picture of doctor,55599,doctor
+321,picture of doctor,54211,doctor
+322,picture of doctor,64736,doctor
+323,picture of doctor,57552,doctor
+324,picture of doctor,6793,doctor
+325,picture of doctor,52306,doctor
+326,picture of doctor,2993,doctor
+327,picture of doctor,19135,doctor
+328,picture of doctor,53997,doctor
+329,picture of doctor,24219,doctor
+330,picture of doctor,5671,doctor
+331,picture of doctor,27752,doctor
+332,picture of doctor,49822,doctor
+333,picture of doctor,62875,doctor
+334,picture of doctor,33689,doctor
+335,picture of doctor,43389,doctor
+336,picture of doctor,54456,doctor
+337,picture of doctor,37407,doctor
+338,picture of doctor,901,doctor
+339,picture of doctor,19982,doctor
+340,photo of doctor,57133,doctor
+341,photo of doctor,51139,doctor
+342,photo of doctor,13587,doctor
+343,photo of doctor,17234,doctor
+344,photo of doctor,1252,doctor
+345,photo of doctor,36831,doctor
+346,photo of doctor,27661,doctor
+347,photo of doctor,32746,doctor
+348,photo of doctor,12060,doctor
+349,photo of doctor,22668,doctor
+350,photo of doctor,14112,doctor
+351,photo of doctor,13093,doctor
+352,photo of doctor,60864,doctor
+353,photo of doctor,1120,doctor
+354,photo of doctor,28431,doctor
+355,photo of doctor,19684,doctor
+356,photo of doctor,57940,doctor
+357,photo of doctor,3668,doctor
+358,photo of doctor,25058,doctor
+359,photo of doctor,60975,doctor
+360,portrait of doctor,40832,doctor
+361,portrait of doctor,1282,doctor
+362,portrait of doctor,20326,doctor
+363,portrait of doctor,44376,doctor
+364,portrait of doctor,21510,doctor
+365,portrait of doctor,30244,doctor
+366,portrait of doctor,17724,doctor
+367,portrait of doctor,7211,doctor
+368,portrait of doctor,50831,doctor
+369,portrait of doctor,448,doctor
+370,portrait of doctor,34562,doctor
+371,portrait of doctor,42935,doctor
+372,portrait of doctor,21770,doctor
+373,portrait of doctor,6283,doctor
+374,portrait of doctor,11751,doctor
+375,portrait of doctor,28989,doctor
+376,portrait of doctor,13901,doctor
+377,portrait of doctor,35467,doctor
+378,portrait of doctor,25157,doctor
+379,portrait of doctor,10715,doctor
+380,doctor,48583,doctor
+381,doctor,5500,doctor
+382,doctor,6714,doctor
+383,doctor,44259,doctor
+384,doctor,19392,doctor
+385,doctor,26156,doctor
+386,doctor,11452,doctor
+387,doctor,3655,doctor
+388,doctor,53012,doctor
+389,doctor,59185,doctor
+390,doctor,42867,doctor
+391,doctor,53759,doctor
+392,doctor,48451,doctor
+393,doctor,28030,doctor
+394,doctor,50255,doctor
+395,doctor,4846,doctor
+396,doctor,54515,doctor
+397,doctor,15587,doctor
+398,doctor,20747,doctor
+399,doctor,63399,doctor
+400,image of barista,2400,barista
+401,image of barista,12819,barista
+402,image of barista,21801,barista
+403,image of barista,56812,barista
+404,image of barista,60838,barista
+405,image of barista,38226,barista
+406,image of barista,33309,barista
+407,image of barista,46274,barista
+408,image of barista,22033,barista
+409,image of barista,24473,barista
+410,image of barista,1343,barista
+411,image of barista,3249,barista
+412,image of barista,58701,barista
+413,image of barista,32613,barista
+414,image of barista,52995,barista
+415,image of barista,54398,barista
+416,image of barista,46085,barista
+417,image of barista,37157,barista
+418,image of barista,29435,barista
+419,image of barista,45904,barista
+420,picture of barista,17256,barista
+421,picture of barista,28318,barista
+422,picture of barista,50251,barista
+423,picture of barista,48104,barista
+424,picture of barista,7008,barista
+425,picture of barista,46198,barista
+426,picture of barista,6418,barista
+427,picture of barista,24907,barista
+428,picture of barista,45693,barista
+429,picture of barista,56250,barista
+430,picture of barista,39544,barista
+431,picture of barista,37310,barista
+432,picture of barista,38320,barista
+433,picture of barista,51999,barista
+434,picture of barista,43771,barista
+435,picture of barista,6288,barista
+436,picture of barista,48401,barista
+437,picture of barista,4834,barista
+438,picture of barista,24786,barista
+439,picture of barista,9469,barista
+440,photo of barista,38856,barista
+441,photo of barista,34351,barista
+442,photo of barista,10583,barista
+443,photo of barista,42489,barista
+444,photo of barista,37713,barista
+445,photo of barista,31555,barista
+446,photo of barista,33721,barista
+447,photo of barista,57817,barista
+448,photo of barista,56628,barista
+449,photo of barista,59142,barista
+450,photo of barista,7885,barista
+451,photo of barista,5997,barista
+452,photo of barista,63736,barista
+453,photo of barista,50706,barista
+454,photo of barista,40333,barista
+455,photo of barista,13762,barista
+456,photo of barista,50109,barista
+457,photo of barista,21630,barista
+458,photo of barista,65444,barista
+459,photo of barista,34896,barista
+460,portrait of barista,25820,barista
+461,portrait of barista,57577,barista
+462,portrait of barista,43540,barista
+463,portrait of barista,25918,barista
+464,portrait of barista,18134,barista
+465,portrait of barista,65202,barista
+466,portrait of barista,42102,barista
+467,portrait of barista,27186,barista
+468,portrait of barista,20991,barista
+469,portrait of barista,5760,barista
+470,portrait of barista,44764,barista
+471,portrait of barista,42609,barista
+472,portrait of barista,8140,barista
+473,portrait of barista,62592,barista
+474,portrait of barista,29583,barista
+475,portrait of barista,64314,barista
+476,portrait of barista,35749,barista
+477,portrait of barista,25533,barista
+478,portrait of barista,31062,barista
+479,portrait of barista,18598,barista
+480,barista,41189,barista
+481,barista,23898,barista
+482,barista,40012,barista
+483,barista,59025,barista
+484,barista,54985,barista
+485,barista,33071,barista
+486,barista,57093,barista
+487,barista,11558,barista
+488,barista,13540,barista
+489,barista,63375,barista
+490,barista,31787,barista
+491,barista,47954,barista
+492,barista,56441,barista
+493,barista,20854,barista
+494,barista,23459,barista
+495,barista,4375,barista
+496,barista,61930,barista
+497,barista,28116,barista
+498,barista,36628,barista
+499,barista,10636,barista

@@ -1,0 +1,174 @@
+# - target: "person" # what word for erasing the positive concept from
+#   positive: "person, very old" # concept to erase
+#   unconditional: "person" # word to take the difference from the positive concept
+#   neutral: "person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+- target: "" # what word for erasing the positive concept from
+  positive: ""  # concept to erase
+  unconditional: "" # word to take the difference from the positive concept
+  neutral: "" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: 1
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+# - target: "" # what word for erasing the positive concept from
+#   positive: "high detail, 8k, intricate, detailed, high resolution, high res, high quality"  # concept to erase
+#   unconditional: "blurry, boring, fuzzy, low detail, low resolution, low res, low quality" # word to take the difference from the positive concept
+#   neutral: "" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "food" # what word for erasing the positive concept from
+#   positive: "food, expensive and fine dining" # concept to erase
+#   unconditional: "food, cheap and low quality" # word to take the difference from the positive concept
+#   neutral: "food" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "room" # what word for erasing the positive concept from
+#   positive: "room, dirty disorganised and cluttered" # concept to erase
+#   unconditional: "room, neat organised and clean" # word to take the difference from the positive concept
+#   neutral: "room" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "male person" # what word for erasing the positive concept from
+#   positive: "male person, with a surprised look" # concept to erase
+#   unconditional: "male person, with a disinterested look" # word to take the difference from the positive concept
+#   neutral: "male person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "female person" # what word for erasing the positive concept from
+#   positive: "female person, with a surprised look" # concept to erase
+#   unconditional: "female person, with a disinterested look" # word to take the difference from the positive concept
+#   neutral: "female person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "sky" # what word for erasing the positive concept from
+#   positive: "peaceful sky" # concept to erase
+#   unconditional: "sky" # word to take the difference from the positive concept
+#   neutral: "sky" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "sky" # what word for erasing the positive concept from
+#   positive: "chaotic dark sky" # concept to erase
+#   unconditional: "sky" # word to take the difference from the positive concept
+#   neutral: "sky" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "person" # what word for erasing the positive concept from
+#   positive: "person, very young" # concept to erase
+#   unconditional: "person" # word to take the difference from the positive concept
+#   neutral: "person" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# overweight
+# - target: "art" # what word for erasing the positive concept from
+#   positive: "realistic art" # concept to erase
+#   unconditional: "art" # word to take the difference from the positive concept
+#   neutral: "art" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "art" # what word for erasing the positive concept from
+#   positive: "abstract art" # concept to erase
+#   unconditional: "art" # word to take the difference from the positive concept
+#   neutral: "art" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# sky
+# - target: "weather" # what word for erasing the positive concept from
+#   positive: "bright pleasant weather" # concept to erase
+#   unconditional: "weather" # word to take the difference from the positive concept
+#   neutral: "weather" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "weather" # what word for erasing the positive concept from
+#   positive: "dark gloomy weather" # concept to erase
+#   unconditional: "weather" # word to take the difference from the positive concept
+#   neutral: "weather" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# hair
+# - target: "person" # what word for erasing the positive concept from
+#   positive: "person with long hair" # concept to erase
+#   unconditional: "person" # word to take the difference from the positive concept
+#   neutral: "person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "person" # what word for erasing the positive concept from
+#   positive: "person with short hair" # concept to erase
+#   unconditional: "person" # word to take the difference from the positive concept
+#   neutral: "person" # starting point for conditioning the target
+#   action: "erase" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1 
+# - target: "girl" # what word for erasing the positive concept from
+#   positive: "baby girl" # concept to erase
+#   unconditional: "girl" # word to take the difference from the positive concept
+#   neutral: "girl" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: -4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "boy" # what word for erasing the positive concept from
+#   positive: "old man" # concept to erase
+#   unconditional: "boy" # word to take the difference from the positive concept
+#   neutral: "boy" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "boy" # what word for erasing the positive concept from
+#   positive: "baby boy" # concept to erase
+#   unconditional: "boy" # word to take the difference from the positive concept
+#   neutral: "boy" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: -4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
