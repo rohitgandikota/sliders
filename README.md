@@ -11,3 +11,7 @@ python train-lora.py --attributes 'male, female' --name 'ageslider' --rank 4 --a
 ```
 
 `--attributes` argument is used to disentangle concepts from the slider. For instance age slider makes all old people male (so instead add the `"female, male"` attributes to allow disentanglement)
+
+
+## Evaluate 
+To evaluate your trained models use the notebook `sliders-inference-clean.ipynb`
