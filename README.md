@@ -2,7 +2,7 @@
 Project repository for LoRA sliders for diffusion models
 
 
-## Training SD-v1.x and SD-2.x LoRa
+## Training SD-1.x and SD-2.x LoRa
 To train an age slider - go to `data/prompts.yaml` and edit the `target=person` and `positive=old person` and `unconditional=young person` (opposite of positive) and `neutral=person` and `action=enhance` with `guidance=4`. <br>
 If you do not want your edit to be targetted to person replace it with any target you want (eg. dog) or if you need it global replace `person` with `""`  <br>
 Finally, run the command:
