@@ -20,8 +20,9 @@ UNET_TARGET_REPLACE_MODULE_CONV = [
     "ResnetBlock2D",
     "Downsample2D",
     "Upsample2D",
-    #     "DownBlock2D",
-    #     "UpBlock2D"
+    "DownBlock2D",
+    "UpBlock2D",
+    
 ]  # locon, 3clier
 
 LORA_PREFIX_UNET = "lora_unet"
@@ -93,7 +94,7 @@ class LoRAModule(nn.Module):
         self.register_buffer("alpha", torch.tensor(alpha))  # 定数として扱える
 
         # same as microsoft's
-        nn.init.kaiming_uniform_(self.lora_down.weight, a=math.sqrt(5))
+        nn.init.kaiming_uniform_(self.lora_down.weight, a=1)
         nn.init.zeros_(self.lora_up.weight)
 
         self.multiplier = multiplier
@@ -210,8 +211,9 @@ class LoRANetwork(nn.Module):
                         )
 #                         print(name, child_name)
 #                         print(child_module.weight.shape)
-                        loras.append(lora)
-                        names.append(lora_name)
+                        if lora_name not in names:
+                            loras.append(lora)
+                            names.append(lora_name)
 #         print(f'@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n {names}')
         return loras
 
