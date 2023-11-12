@@ -30,10 +30,10 @@ if __name__=='__main__':
         return sorted(l, key = alphanum_key)
 
 
-    path = args.im_path #'/share/u/rohit/www/final_erase/coco/'
+    path = args.im_path 
     model_names = os.listdir(path)
     model_names = [m for m in model_names if 'all' not in m and '.csv' not in m]
-    csv_path = args.prompts_path #'/share/u/rohit/erase-closed/prompts_dir/erased'
+    csv_path = args.prompts_path
     save_path = ''
     prompt = args. prompt.strip()
     print(f'Eval agaisnt prompt: {prompt}')
@@ -42,9 +42,9 @@ if __name__=='__main__':
     df = pd.read_csv(csv_path)
     for model_name in model_names:
         print(model_name)
-#         csv_path = f'/share/u/rohit/erase-closed/data/coco_30k.csv'
+
         im_folder = os.path.join(path, model_name)
-#         df = pd.read_csv(csv_path)
+
         images = os.listdir(im_folder)
         images = sorted_nicely(images)
         ratios = {}
