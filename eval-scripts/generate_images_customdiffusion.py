@@ -790,7 +790,7 @@ if __name__=='__main__':
     parser.add_argument('--prompts_path', help='path to csv prompts', type=str, required=True)
     parser.add_argument('--token', help='path to csv prompts', type=str, required=True)
     args = parser.parse_args()
-    model_id = args.model_name #"/share/u/rohit/textual_inversion_eyebrows-v1-4"
+    model_id = args.model_name 
     custom_token = args.token #'<sks-eyebrows>'
 
     
@@ -803,7 +803,7 @@ if __name__=='__main__':
     case_numbers = list(df.case_number)
     file = model_id.split('/')[-2]
 
-    os.makedirs(f'/share/u/rohit/www/customdiffusion/{file}/',exist_ok=True)
+    os.makedirs(f'images/customdiffusion/{file}/',exist_ok=True)
     for idx,prompt in enumerate(prompts):
 
         prompt += f" with {custom_token}"
@@ -811,4 +811,4 @@ if __name__=='__main__':
         generator = torch.manual_seed(seeds[idx])
         images = pipe(prompt, num_inference_steps=50, guidance_scale=7.5, num_images_per_prompt=5).images
         for i, im in enumerate(images):
-            im.save(f'/share/u/rohit/www/customdiffusion/{file}/{case_number}_{i}.png')
+            im.save(f'images/customdiffusion/{file}/{case_number}_{i}.png')
