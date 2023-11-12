@@ -441,8 +441,7 @@ if __name__=='__main__':
     weight_dtype = torch.float16
     num_images_per_prompt = 1
     scales = [-2, -1, 0, 1, 2]
-    scales = [-1, -.5, 0, .5, 1]
-    scales = [-2]
+    
     df = pd.read_csv(csv_path)
     
     for scale in scales:
