@@ -1,0 +1,36 @@
+- target: "girl" # what word for erasing the positive concept from
+  positive: "old woman" # concept to erase
+  unconditional: "girl" # word to take the difference from the positive concept
+  neutral: "girl" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: 4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: "girl" # what word for erasing the positive concept from
+  positive: "baby girl" # concept to erase
+  unconditional: "girl" # word to take the difference from the positive concept
+  neutral: "girl" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: -4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: "boy" # what word for erasing the positive concept from
+  positive: "old man" # concept to erase
+  unconditional: "boy" # word to take the difference from the positive concept
+  neutral: "boy" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: 4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: "boy" # what word for erasing the positive concept from
+  positive: "baby boy" # concept to erase
+  unconditional: "boy" # word to take the difference from the positive concept
+  neutral: "boy" # starting point for conditioning the target
+  action: "enhance" # erase or enhance
+  guidance_scale: -4
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
