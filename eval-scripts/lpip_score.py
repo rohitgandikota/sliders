@@ -74,4 +74,3 @@ if __name__=='__main__':
             print(f'Case {case_number}: {np.mean(lpips_scores)}')
             df_prompts.loc[index,f'lpips_{model_name}'] = np.mean(lpips_scores)
     df_prompts.to_csv(os.path.join(args.im_path, f'lpips_score.csv'), index=False)
-# python eval-scripts/lpips_eval.py --original_path '/share/u/rohit/www/closed_form/niche_short/original/' --csv_path '/share/u/rohit/erase-closed/data/short_niche_art_prompts.csv' --save_path '/share/u/rohit/www/closed_form/niche_short/' --edited_path '/share/u/rohit/www/closed_form/niche_short/erasing-ThomasKinkade-with-preservation/'
