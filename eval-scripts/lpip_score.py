@@ -39,14 +39,16 @@ if __name__=='__main__':
                     description = 'Takes the path to two images and gives LPIPS')
     parser.add_argument('--im_path', help='path to original image', type=str, required=True)
     parser.add_argument('--prompts_path', help='path to csv prompts', type=str, required=True)
+    parser.add_argument('--true', help='path to true SD images', type=str, required=True)
     
     loss_fn_alex = lpips.LPIPS(net='alex')
     args = parser.parse_args()
     
+    true = args.true
     models = os.listdir(args.im_path)
-    models = [m for m in models if m not in ['0','all'] and '.csv' not in m]
+    models = [m for m in models if m not in [true,'all'] and '.csv' not in m]
     
-    original_path = os.path.join(args.im_path,'0')
+    original_path = os.path.join(args.im_path,true)
     df_prompts = pd.read_csv(args.prompts_path)
     for model_name in models:
         edited_path = os.path.join(args.im_path,model_name)

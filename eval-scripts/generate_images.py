@@ -42,10 +42,10 @@ def flush():
     
 def generate_images(model_name, prompts_path, save_path, negative_prompt, device, guidance_scale , image_size, ddim_steps, num_samples,from_case, till_case, base, rank, start_noise):
     # Load scheduler, tokenizer and models.
-    scales = [-2, -1, -.5, 0, .5, 1, 2]
+    scales = [-2, -1, 0, 1, 2]
     revision = None
     pretrained_model_name_or_path = "CompVis/stable-diffusion-v1-4"
-    weight_dtype = torch.float32
+    weight_dtype = torch.float16
 
     # Load scheduler, tokenizer and models.
     noise_scheduler = LMSDiscreteScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear", num_train_timesteps=1000)
@@ -76,7 +76,7 @@ def generate_images(model_name, prompts_path, save_path, negative_prompt, device
     text_encoder.to(device, dtype=weight_dtype)
 
     name = os.path.basename(model_name)
-    alpha = 4
+    alpha = 1
     train_method = 'xattn'
     n = model_name.split('/')[-2]
     if 'noxattn' in n:
@@ -169,7 +169,7 @@ def generate_images(model_name, prompts_path, save_path, negative_prompt, device
             noise_scheduler.set_timesteps(ddim_steps)
 
             latents = latents * noise_scheduler.init_noise_sigma
-
+            latents = latents.to(weight_dtype)
             latent_model_input = torch.cat([latents] * 2)
             for t in tqdm(noise_scheduler.timesteps):
                 if t>start_noise:
@@ -228,7 +228,7 @@ if __name__=='__main__':
     parser.add_argument('--num_samples', help='number of samples per prompt', type=int, required=False, default=5)
     parser.add_argument('--ddim_steps', help='ddim steps of inference used to train', type=int, required=False, default=50)
     parser.add_argument('--rank', help='rank of the LoRA', type=int, required=False, default=4)
-    parser.add_argument('--start_noise', help='what time stamp to flip to edited model', type=int, required=False, default=650)
+    parser.add_argument('--start_noise', help='what time stamp to flip to edited model', type=int, required=False, default=850)
     
     args = parser.parse_args()
     

@@ -212,7 +212,7 @@ def generate_images_(model_name, prompts_path, save_path, negative_prompt, devic
                 new_state_dict[key] = value + scale * delta_dict[key]
             
             
-            im = generate_images(unet=unet, new_state_dict=new_state_dict, vae=vae, tokenizer=tokenizer, text_encoder=text_encoder, prompt=prompt, evaluation_seed=seed,num_samples=num_samples, start_noise=start_noise)
+            im = generate_images(unet=unet, new_state_dict=new_state_dict, vae=vae, tokenizer=tokenizer, text_encoder=text_encoder, prompt=prompt, evaluation_seed=seed,num_samples=num_samples, start_noise=start_noise, device=device)
             images_list.append(im)
             del new_state_dict
         for num in range(num_samples):
