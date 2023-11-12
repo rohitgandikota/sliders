@@ -73,4 +73,4 @@ for idx, prompt in enumerate(prompts):
             generator = generator
         ).images
     for i, im in enumerate(images):
-        im.save(f'/share/u/rohit/www/textualinversion/eyesize_xl/{case_number}_{i}.png')
+        im.save(f'images/textualinversion/eyesize_xl/{case_number}_{i}.png')
