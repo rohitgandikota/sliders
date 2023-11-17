@@ -55,7 +55,7 @@ python train-lora-scale-xl.py --name 'eyesliderXL' --rank 4 --alpha 1 --config_f
 ## Citing our work
 The preprint can be cited as follows
 ```
-@article{gandikota2023concept,
+@article{gandikota2023sliders,
   title={Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models},
   author={Rohit Gandikota and Joanna Materzy\'nska and Tingrui Zhou and Antonio Torralba and David Bau},
   journal={arXiv preprint arXiv:2308.14761},
