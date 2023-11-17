@@ -1,7 +1,7 @@
-# sliders
-Project repository for LoRA sliders for diffusion models
+# Concept Sliders
+Official code implementation of ``Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models''
 
-## Text-based Sliders
+## Textual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
 To train an age slider - go to `train-scripts/textsliders/data/prompts.yaml` and edit the `target=person` and `positive=old person` and `unconditional=young person` (opposite of positive) and `neutral=person` and `action=enhance` with `guidance=4`. <br>
 If you do not want your edit to be targetted to person replace it with any target you want (eg. dog) or if you need it global replace `person` with `""`  <br>
@@ -28,7 +28,7 @@ python train-lora-xl.py --attributes 'male, female' --name 'agesliderXL' --rank 
 To evaluate your trained models use the notebook `XL-sliders-inference.ipynb`
 
 
-## Image-based Sliders
+## Visual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
 To train image based sliders, you need to create a ~4-6 pairs of image dataset (before/after edit for desired concept). Save the before images and after images separately. You can also create a dataset with varied intensity effect and save them differently. 
 
