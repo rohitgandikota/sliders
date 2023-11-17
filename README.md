@@ -2,6 +2,11 @@
 ###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2303.07345.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/)<br>
 Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models"
 
+<div align='center'>
+<img src = 'images/main_figure.png'>
+</div>
+
+
 ## Textual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
 To train an age slider - go to `train-scripts/textsliders/data/prompts.yaml` and edit the `target=person` and `positive=old person` and `unconditional=young person` (opposite of positive) and `neutral=person` and `action=enhance` with `guidance=4`. <br>
