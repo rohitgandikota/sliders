@@ -1,5 +1,6 @@
 # Concept Sliders
-Official code implementation of ``Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models''
+###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2303.07345.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/)<br>
+Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models"
 
 ## Textual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
