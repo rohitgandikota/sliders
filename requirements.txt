@@ -22,4 +22,4 @@ torchvision==0.14.1
 tqdm==4.64.1
 transformers==4.27.4
 wandb==0.12.21
-~orch==1.13.1
+torch==1.13.1
