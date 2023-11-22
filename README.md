@@ -6,7 +6,16 @@ Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Cont
 <img src = 'images/main_figure.png'>
 </div>
 
+## Setup
+To set up your python environment:
+```
+conda create -n sliders python=3.9
+conda activate sliders
 
+git  clone https://github.com/rohitgandikota/sliders.git
+cd sliders
+pip install -r requirements.txt
+```
 ## Textual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
 To train an age slider - go to `train-scripts/textsliders/data/prompts.yaml` and edit the `target=person` and `positive=old person` and `unconditional=young person` (opposite of positive) and `neutral=person` and `action=enhance` with `guidance=4`. <br>
