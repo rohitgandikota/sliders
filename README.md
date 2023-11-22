@@ -1,5 +1,5 @@
 # Concept Sliders
-###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2303.07345.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/)<br>
+###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2311.12092.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/)<br>
 Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models"
 
 <div align='center'>
@@ -58,7 +58,7 @@ The preprint can be cited as follows
 @article{gandikota2023sliders,
   title={Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models},
   author={Rohit Gandikota and Joanna Materzy\'nska and Tingrui Zhou and Antonio Torralba and David Bau},
-  journal={arXiv preprint arXiv:2308.14761},
+  journal={arXiv preprint arXiv:2311.12092},
   year={2023}
 }
 ```
