@@ -9,11 +9,9 @@ numpy==1.23.5
 opencv_python==4.5.5.64
 opencv_python_headless==4.7.0.68
 pandas==1.5.2
-Pillow==9.3.0
 Pillow==10.1.0
 prodigyopt==1.0
 pydantic==1.10.3
-PyYAML==6.0
 PyYAML==6.0.1
 Requests==2.31.0
 safetensors==0.3.1
@@ -22,4 +20,3 @@ torchvision==0.14.1
 tqdm==4.64.1
 transformers==4.27.4
 wandb==0.12.21
-~orch==1.13.1
