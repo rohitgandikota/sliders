@@ -1,4 +1,4 @@
-prompts_file: "./data/prompts-xl.yaml"
+prompts_file: "trainscripts/textsliders/data/prompts-xl.yaml"
 pretrained_model:
   name_or_path: "stabilityai/stable-diffusion-xl-base-1.0" # you can also use .ckpt or .safetensors models
   v2: false # true if model is v2.x

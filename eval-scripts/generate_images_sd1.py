@@ -20,7 +20,7 @@ from diffusers.loaders import AttnProcsLayers
 from diffusers.models.attention_processor import LoRAAttnProcessor, AttentionProcessor
 from typing import Any, Dict, List, Optional, Tuple, Union
 sys.path.insert(1, os.getcwd())
-from lora import LoRANetwork, DEFAULT_TARGET_REPLACE, UNET_TARGET_REPLACE_MODULE_CONV
+from trainscripts.textsliders.lora import LoRANetwork, DEFAULT_TARGET_REPLACE, UNET_TARGET_REPLACE_MODULE_CONV
 
 
 def flush():
@@ -225,7 +225,7 @@ if __name__=='__main__':
     parser.add_argument('--image_size', help='image size used to train', type=int, required=False, default=512)
     parser.add_argument('--till_case', help='continue generating from case_number', type=int, required=False, default=1000000)
     parser.add_argument('--from_case', help='continue generating from case_number', type=int, required=False, default=0)
-    parser.add_argument('--num_samples', help='number of samples per prompt', type=int, required=False, default=5)
+    parser.add_argument('--num_samples', help='number of samples per prompt', type=int, required=False, default=2)
     parser.add_argument('--ddim_steps', help='ddim steps of inference used to train', type=int, required=False, default=50)
     parser.add_argument('--rank', help='rank of the LoRA', type=int, required=False, default=4)
     parser.add_argument('--start_noise', help='what time stamp to flip to edited model', type=int, required=False, default=850)
