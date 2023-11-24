@@ -214,7 +214,7 @@ def train(
             folder2 = folders[scales==scale_to_look][0]
             
             ims = os.listdir(f'{folder_main}/{folder1}/')
-            ims = [im_ for im_ in ims if '.png' in im_]
+            ims = [im_ for im_ in ims if '.png' in im_ or '.jpg' in im_ or '.jpeg' in im_ or '.webp' in im_]
             random_sampler = random.randint(0, len(ims)-1)
 
             img1 = Image.open(f'{folder_main}/{folder1}/{ims[random_sampler]}').resize((512,512))
