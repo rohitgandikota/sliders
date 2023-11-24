@@ -7,7 +7,7 @@ Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Cont
 </div>
 
 ## Colab Demo
-Try out our colab demo here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/XL-sliders-inference.ipynb)
+Try out our colab demo here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb)
 
 ## Setup
 To set up your python environment:
