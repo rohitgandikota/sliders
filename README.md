@@ -36,10 +36,10 @@ To evaluate your trained models use the notebook `SD1-sliders-inference.ipynb`
 
 
 ### Training SD-XL
-To train sliders for SD-XL, use the script `train-lora-xl.py`. The setup is same as SDv1.4
+To train sliders for SD-XL, use the script `train_lora_xl.py`. The setup is same as SDv1.4
 
 ```
-python trainscripts/textsliders/train-lora-xl.py --attributes 'male, female' --name 'agesliderXL' --rank 4 --alpha 1 --config_file 'trainscripts/textsliders/data/config-xl.yaml'
+python trainscripts/textsliders/train_lora_xl.py --attributes 'male, female' --name 'agesliderXL' --rank 4 --alpha 1 --config_file 'trainscripts/textsliders/data/config-xl.yaml'
 ```
 
 #### Evaluate 

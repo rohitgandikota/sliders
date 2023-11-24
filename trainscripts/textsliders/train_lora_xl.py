@@ -252,7 +252,7 @@ def train(
                     add_time_ids, add_time_ids, prompt_pair.batch_size
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
             neutral_latents = train_util.predict_noise_xl(
                 unet,
                 noise_scheduler,
@@ -272,7 +272,7 @@ def train(
                     add_time_ids, add_time_ids, prompt_pair.batch_size
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
             unconditional_latents = train_util.predict_noise_xl(
                 unet,
                 noise_scheduler,
@@ -292,7 +292,7 @@ def train(
                     add_time_ids, add_time_ids, prompt_pair.batch_size
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
 
             if config.logging.verbose:
                 print("positive_latents:", positive_latents[0, 0, :5, :5])
@@ -319,7 +319,7 @@ def train(
                     add_time_ids, add_time_ids, prompt_pair.batch_size
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
 
             if config.logging.verbose:
                 print("target_latents:", target_latents[0, 0, :5, :5])

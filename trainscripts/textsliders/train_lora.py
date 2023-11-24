@@ -224,22 +224,8 @@ def train(
                     prompt_pair.batch_size,
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
-            
-            # with network: の外では空のLoRAのみが有効になる
-            orig_target_latents = train_util.predict_noise(
-                unet,
-                noise_scheduler,
-                current_timestep,
-                denoised_latents,
-                train_util.concat_embeddings(
-                    prompt_pair.unconditional,
-                    prompt_pair.target,
-                    prompt_pair.batch_size,
-                ),
-                guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
-            
+            ).to(device, dtype=weight_dtype)
+             
             neutral_latents = train_util.predict_noise(
                 unet,
                 noise_scheduler,
@@ -251,7 +237,7 @@ def train(
                     prompt_pair.batch_size,
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
             unconditional_latents = train_util.predict_noise(
                 unet,
                 noise_scheduler,
@@ -263,7 +249,7 @@ def train(
                     prompt_pair.batch_size,
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
             
             
             #########################
@@ -284,7 +270,7 @@ def train(
                     prompt_pair.batch_size,
                 ),
                 guidance_scale=1,
-            ).to("cpu", dtype=torch.float32)
+            ).to(device, dtype=weight_dtype)
             
             #########################
 
