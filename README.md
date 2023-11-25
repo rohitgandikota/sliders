@@ -50,8 +50,8 @@ To evaluate your trained models use the notebook `XL-sliders-inference.ipynb`
 ### Training SD-1.x and SD-2.x LoRa
 To train image based sliders, you need to create a ~4-6 pairs of image dataset (before/after edit for desired concept). Save the before images and after images separately. You can also create a dataset with varied intensity effect and save them differently. 
 
-To train an image slider for eye size - go to `train-scripts/imagesliders/data/config.yaml` and edit the `target=eye` and `positive='eye'` and `unconditional=''` and `neutral=eye` and `action=enhance` with `guidance=4`. <br>
-If you want the diffusion model to figure out the edit concept - leave `target, postive, unconditional, neutral` as `''`<br>
+To train an image slider for eye size - go to `train-scripts/imagesliders/data/config.yaml` and edit the `target=eye` and `itive='eye'` and `unconditional=''` and `neutral=eye` and `action=enhance` with `guidance=4`. <br>
+If you want the diffusion model to figure out the edit concept - leave `target, positive, unconditional, neutral` as `''`<br>
 Finally, run the command:
 ```
 python trainscripts/imagesliders/train_lora-scale.py --name 'eyeslider' --rank 4 --alpha 1 --config_file 'trainscripts/imagesliders/data/config.yaml' --folder_main 'datasets/eyesize/' --folders 'bigsize, smallsize' --scales '1, -1' 
