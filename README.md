@@ -64,6 +64,11 @@ To train image sliders for SD-XL, use the script `train-lora-scale-xl.py`. The s
 python trainscripts/imagesliders/train_lora-scale-xl.py --name 'eyesliderXL' --rank 4 --alpha 1 --config_file 'trainscripts/imagesliders/data/config-xl.yaml' --folder_main '/share/u/rohit/imageXLdataset/eyesize_data/'
 ```
 
+## Editing Real Images
+Concept sliders can be used to edit real images. We use null inversion to edit the images - instead of prompt, we use sliders! <br>
+Checkout - `demo_image_editing.ipynb` for mode details.
+
+
 ## Citing our work
 The preprint can be cited as follows
 ```
