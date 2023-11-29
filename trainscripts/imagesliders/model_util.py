@@ -71,7 +71,7 @@ def load_diffusers_model(
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
     )
-    
+
     vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae")
 
     return tokenizer, text_encoder, unet, vae
@@ -191,6 +191,7 @@ def load_checkpoint_model_xl(
     )
 
     unet = pipe.unet
+    vae = pipe.vae
     tokenizers = [pipe.tokenizer, pipe.tokenizer_2]
     text_encoders = [pipe.text_encoder, pipe.text_encoder_2]
     if len(text_encoders) == 2:
@@ -198,7 +199,7 @@ def load_checkpoint_model_xl(
 
     del pipe
 
-    return tokenizers, text_encoders, unet
+    return tokenizers, text_encoders, unet, vae
 
 
 def load_models_xl(
@@ -214,18 +215,13 @@ def load_models_xl(
     if pretrained_model_name_or_path.endswith(
         ".ckpt"
     ) or pretrained_model_name_or_path.endswith(".safetensors"):
-        (
-            tokenizers,
-            text_encoders,
-            unet,
-        ) = load_checkpoint_model_xl(pretrained_model_name_or_path, weight_dtype)
+        (tokenizers, text_encoders, unet, vae) = load_checkpoint_model_xl(
+            pretrained_model_name_or_path, weight_dtype
+        )
     else:  # diffusers
-        (
-            tokenizers,
-            text_encoders,
-            unet,
-            vae
-        ) = load_diffusers_model_xl(pretrained_model_name_or_path, weight_dtype)
+        (tokenizers, text_encoders, unet, vae) = load_diffusers_model_xl(
+            pretrained_model_name_or_path, weight_dtype
+        )
 
     scheduler = create_noise_scheduler(scheduler_name)
 
