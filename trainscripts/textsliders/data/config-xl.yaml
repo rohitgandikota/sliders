@@ -7,7 +7,7 @@ network:
   type: "c3lier" # or "c3lier" or "lierla"
   rank: 4
   alpha: 1.0
-  training_method: "noxattn"
+  training_method: "noxattn" # selfattn, xattn, noxattn, or innoxattn
 train:
   precision: "bfloat16"
   noise_scheduler: "ddim" # or "ddpm", "lms", "euler_a"
