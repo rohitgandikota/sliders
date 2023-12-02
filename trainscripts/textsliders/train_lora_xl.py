@@ -407,7 +407,6 @@ def main(args):
     
     prompts = prompt_util.load_prompts_from_yaml(config.prompts_file, attributes)
     print(prompts)
-    return None
     device = torch.device(f"cuda:{args.device}")
     train(config, prompts, device)
 
