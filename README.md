@@ -19,6 +19,7 @@ git  clone https://github.com/rohitgandikota/sliders.git
 cd sliders
 pip install -r requirements.txt
 ```
+If you are running on Windows - please refer to these Windows setup guidelines [here](https://github.com/rohitgandikota/sliders/issues/27#issuecomment-1833572579)
 ## Textual Concept Sliders
 ### Training SD-1.x and SD-2.x LoRa
 To train an age slider - go to `train-scripts/textsliders/data/prompts.yaml` and edit the `target=person` and `positive=old person` and `unconditional=young person` (opposite of positive) and `neutral=person` and `action=enhance` with `guidance=4`. <br>
