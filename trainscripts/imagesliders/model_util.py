@@ -195,10 +195,10 @@ def load_checkpoint_model_xl(
     text_encoders = [pipe.text_encoder, pipe.text_encoder_2]
     if len(text_encoders) == 2:
         text_encoders[1].pad_token_id = 0
-
+    vae = pipe.vae
     del pipe
 
-    return tokenizers, text_encoders, unet
+    return tokenizers, text_encoders, unet, vae
 
 
 def load_models_xl(
@@ -218,6 +218,7 @@ def load_models_xl(
             tokenizers,
             text_encoders,
             unet,
+            vae
         ) = load_checkpoint_model_xl(pretrained_model_name_or_path, weight_dtype)
     else:  # diffusers
         (
