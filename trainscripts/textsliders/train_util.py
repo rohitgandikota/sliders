@@ -50,9 +50,10 @@ def get_initial_latents(
 ) -> torch.Tensor:
     noise = get_random_noise(n_imgs, height, width, generator=generator).repeat(
         n_prompts, 1, 1, 1
-    )
+    ).to("cuda")
 
-    latents = noise * scheduler.init_noise_sigma
+    init_noise_sigma = torch.tensor(scheduler.init_noise_sigma).to("cuda")
+    latents = noise * init_noise_sigma
 
     return latents
 
