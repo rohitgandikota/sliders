@@ -11,7 +11,7 @@ opencv_python_headless==4.7.0.68
 pandas==1.5.2
 Pillow==10.1.0
 prodigyopt==1.0
-pydantic==1.10.3
+pydantic==2.6.3
 PyYAML==6.0.1
 Requests==2.31.0
 safetensors==0.3.1
