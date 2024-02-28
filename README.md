@@ -9,6 +9,10 @@ Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Cont
 ## Colab Demo
 Try out our colab demo here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb)
 
+## UPDATE
+You can now use GPT-4 (or any other openAI model) to create prompts for your text sliders. All you need to do is describe what slider you want to create (e.g: "i want to make people look happy"). <br>
+Please refer to the [GPT-notebook](https://github.com/rohitgandikota/sliders/blob/main/GPT_prompt_helper.ipynb)
+
 ## Setup
 To set up your python environment:
 ```
