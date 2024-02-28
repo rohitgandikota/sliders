@@ -418,7 +418,7 @@ if __name__ == "__main__":
         required=True,
         help="Config file for training.",
     )
-    # config_file 'data/config.yaml'
+    # --config_file 'data/config.yaml'
     parser.add_argument(
         "--alpha",
         type=float,
@@ -447,7 +447,7 @@ if __name__ == "__main__":
         type=str,
         required=False,
         default=None,
-        help="Device to train on.",
+        help="Name of trained concept",
     )
     # --name 'eyesize_slider'
     parser.add_argument(
