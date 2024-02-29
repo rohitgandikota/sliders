@@ -1,0 +1,110 @@
+- target: male white person
+  positive: male white person adorned with jewelry, sparkling diamonds, elegant necklaces,
+    luxurious bracelets, shimmering earrings
+  unconditional: male white person with no jewelry, plain appearance, unadorned
+  neutral: male white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male black person
+  positive: male black person adorned with jewelry, sparkling diamonds, elegant necklaces,
+    luxurious bracelets, shimmering earrings
+  unconditional: male black person with no jewelry, plain appearance, unadorned
+  neutral: male black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male indian person
+  positive: male indian person adorned with jewelry, sparkling diamonds, elegant necklaces,
+    luxurious bracelets, shimmering earrings
+  unconditional: male indian person with no jewelry, plain appearance, unadorned
+  neutral: male indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male asian person
+  positive: male asian person adorned with jewelry, sparkling diamonds, elegant necklaces,
+    luxurious bracelets, shimmering earrings
+  unconditional: male asian person with no jewelry, plain appearance, unadorned
+  neutral: male asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male hispanic person
+  positive: male hispanic person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: male hispanic person with no jewelry, plain appearance, unadorned
+  neutral: male hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female white person
+  positive: female white person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: female white person with no jewelry, plain appearance, unadorned
+  neutral: female white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female black person
+  positive: female black person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: female black person with no jewelry, plain appearance, unadorned
+  neutral: female black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female indian person
+  positive: female indian person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: female indian person with no jewelry, plain appearance, unadorned
+  neutral: female indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female asian person
+  positive: female asian person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: female asian person with no jewelry, plain appearance, unadorned
+  neutral: female asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female hispanic person
+  positive: female hispanic person adorned with jewelry, sparkling diamonds, elegant
+    necklaces, luxurious bracelets, shimmering earrings
+  unconditional: female hispanic person with no jewelry, plain appearance, unadorned
+  neutral: female hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1

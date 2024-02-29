@@ -1,0 +1,100 @@
+- target: male, white, person
+  positive: male, white, person, looking surprised, wide eyes, open mouth
+  unconditional: male, white, person, looking calm, neutral expression
+  neutral: male, white, person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male,  black, person
+  positive: male,  black, person, looking surprised, wide eyes, open mouth
+  unconditional: male,  black, person, looking calm, neutral expression
+  neutral: male,  black, person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male,  indian, person
+  positive: male,  indian, person, looking surprised, wide eyes, open mouth
+  unconditional: male,  indian, person, looking calm, neutral expression
+  neutral: male,  indian, person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male,  asian, person
+  positive: male,  asian, person, looking surprised, wide eyes, open mouth
+  unconditional: male,  asian, person, looking calm, neutral expression
+  neutral: male,  asian, person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male,  hispanic, person
+  positive: male,  hispanic, person, looking surprised, wide eyes, open mouth
+  unconditional: male,  hispanic, person, looking calm, neutral expression
+  neutral: male,  hispanic, person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: ' female, white, person'
+  positive: ' female, white, person, looking surprised, wide eyes, open mouth'
+  unconditional: ' female, white, person, looking calm, neutral expression'
+  neutral: ' female, white, person'
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: ' female,  black, person'
+  positive: ' female,  black, person, looking surprised, wide eyes, open mouth'
+  unconditional: ' female,  black, person, looking calm, neutral expression'
+  neutral: ' female,  black, person'
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: ' female,  indian, person'
+  positive: ' female,  indian, person, looking surprised, wide eyes, open mouth'
+  unconditional: ' female,  indian, person, looking calm, neutral expression'
+  neutral: ' female,  indian, person'
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: ' female,  asian, person'
+  positive: ' female,  asian, person, looking surprised, wide eyes, open mouth'
+  unconditional: ' female,  asian, person, looking calm, neutral expression'
+  neutral: ' female,  asian, person'
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: ' female,  hispanic, person'
+  positive: ' female,  hispanic, person, looking surprised, wide eyes, open mouth'
+  unconditional: ' female,  hispanic, person, looking calm, neutral expression'
+  neutral: ' female,  hispanic, person'
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1

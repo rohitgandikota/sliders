@@ -1,0 +1,11 @@
+- target: car
+  positive: car, alien technology, futuristic design, advanced propulsion, sleek aerodynamic
+    shape
+  unconditional: car, outdated, old-fashioned, conventional design
+  neutral: car
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1

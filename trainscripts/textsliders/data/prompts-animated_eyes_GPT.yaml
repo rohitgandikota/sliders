@@ -1,0 +1,110 @@
+- target: male white person
+  positive: male white person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: male white person, eyes normal size, realistic proportions
+  neutral: male white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male black person
+  positive: male black person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: male black person, eyes normal size, realistic proportions
+  neutral: male black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male indian person
+  positive: male indian person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: male indian person, eyes normal size, realistic proportions
+  neutral: male indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male asian person
+  positive: male asian person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: male asian person, eyes normal size, realistic proportions
+  neutral: male asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male hispanic person
+  positive: male hispanic person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: male hispanic person, eyes normal size, realistic proportions
+  neutral: male hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female white person
+  positive: female white person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: female white person, eyes normal size, realistic proportions
+  neutral: female white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female black person
+  positive: female black person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: female black person, eyes normal size, realistic proportions
+  neutral: female black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female indian person
+  positive: female indian person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: female indian person, eyes normal size, realistic proportions
+  neutral: female indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female asian person
+  positive: female asian person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: female asian person, eyes normal size, realistic proportions
+  neutral: female asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female hispanic person
+  positive: female hispanic person, eyes extremely large, animatedly big eyes, cartoonish
+    proportions
+  unconditional: female hispanic person, eyes normal size, realistic proportions
+  neutral: female hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1

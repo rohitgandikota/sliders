@@ -1,0 +1,100 @@
+- target: male white person
+  positive: male white person, smiling, happy face, big smile
+  unconditional: male white person, frowning, grumpy, sad
+  neutral: male white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male black person
+  positive: male black person, smiling, happy face, big smile
+  unconditional: male black person, frowning, grumpy, sad
+  neutral: male black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male indian person
+  positive: male indian person, smiling, happy face, big smile
+  unconditional: male indian person, frowning, grumpy, sad
+  neutral: male indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male asian person
+  positive: male asian person, smiling, happy face, big smile
+  unconditional: male asian person, frowning, grumpy, sad
+  neutral: male asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: male hispanic person
+  positive: male hispanic person, smiling, happy face, big smile
+  unconditional: male hispanic person, frowning, grumpy, sad
+  neutral: male hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female white person
+  positive: female white person, smiling, happy face, big smile
+  unconditional: female white person, frowning, grumpy, sad
+  neutral: female white person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female black person
+  positive: female black person, smiling, happy face, big smile
+  unconditional: female black person, frowning, grumpy, sad
+  neutral: female black person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female indian person
+  positive: female indian person, smiling, happy face, big smile
+  unconditional: female indian person, frowning, grumpy, sad
+  neutral: female indian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female asian person
+  positive: female asian person, smiling, happy face, big smile
+  unconditional: female asian person, frowning, grumpy, sad
+  neutral: female asian person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
+- target: female hispanic person
+  positive: female hispanic person, smiling, happy face, big smile
+  unconditional: female hispanic person, frowning, grumpy, sad
+  neutral: female hispanic person
+  guidance: 4
+  rank: 4
+  action: enhance
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 1
