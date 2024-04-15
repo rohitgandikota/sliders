@@ -59,6 +59,8 @@ def train(
         scheduler_name=config.train.noise_scheduler,
         v2=config.pretrained_model.v2,
         v_pred=config.pretrained_model.v_pred,
+        weight_dtype = weight_dtype,
+        variant= "fp16" if weight_dtype == torch.float16 else None
     )
 
     text_encoder.to(device, dtype=weight_dtype)
