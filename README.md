@@ -84,6 +84,8 @@ python app.py
 ```
 For more inference time gradio demos please refer to Cameduru's repo [here](https://github.com/camenduru/sliders-colab)
 
+## Running with ControlNet Integration
+Our user community is amazing! Here is the resource that integrates ControlNet: https://github.com/rohitgandikota/sliders/issues/76#issuecomment-2099766893
 ## Citing our work
 The preprint can be cited as follows
 ```
