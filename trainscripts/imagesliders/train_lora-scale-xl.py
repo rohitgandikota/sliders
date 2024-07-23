@@ -308,11 +308,6 @@ def train(
             ).to(device, dtype=torch.float32)
             
             
-            
-            if config.logging.verbose:
-                print("positive_latents:", positive_latents[0, 0, :5, :5])
-                print("neutral_latents:", neutral_latents[0, 0, :5, :5])
-                print("unconditional_latents:", unconditional_latents[0, 0, :5, :5])
                 
         network.set_lora_slider(scale=scale_to_look)
         with network:
