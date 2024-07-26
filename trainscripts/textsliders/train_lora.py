@@ -59,13 +59,16 @@ def train(
         scheduler_name=config.train.noise_scheduler,
         v2=config.pretrained_model.v2,
         v_pred=config.pretrained_model.v_pred,
+        weight_dtype = weight_dtype,
+        variant= "fp16" if weight_dtype == torch.float16 else None
     )
 
     text_encoder.to(device, dtype=weight_dtype)
     text_encoder.eval()
 
     unet.to(device, dtype=weight_dtype)
-    unet.enable_xformers_memory_efficient_attention()
+    if config.other.use_xformers:
+        unet.enable_xformers_memory_efficient_attention()
     unet.requires_grad_(False)
     unet.eval()
 
@@ -187,7 +190,7 @@ def train(
                 print("batch_size:", prompt_pair.batch_size)
 
             latents = train_util.get_initial_latents(
-                noise_scheduler, prompt_pair.batch_size, height, width, 1
+                noise_scheduler, prompt_pair.batch_size, height, width, 1, device
             ).to(device, dtype=weight_dtype)
 
             with network:

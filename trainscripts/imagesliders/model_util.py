@@ -32,6 +32,7 @@ def load_diffusers_model(
     v2: bool = False,
     clip_skip: Optional[int] = None,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[CLIPTokenizer, CLIPTextModel, UNet2DConditionModel,]:
     # VAE はいらない
 
@@ -49,6 +50,7 @@ def load_diffusers_model(
             num_hidden_layers=24 - (clip_skip - 1) if clip_skip is not None else 23,
             torch_dtype=weight_dtype,
             cache_dir=DIFFUSERS_CACHE_DIR,
+            variant = variant
         )
     else:
         tokenizer = CLIPTokenizer.from_pretrained(
@@ -63,6 +65,7 @@ def load_diffusers_model(
             num_hidden_layers=12 - (clip_skip - 1) if clip_skip is not None else 12,
             torch_dtype=weight_dtype,
             cache_dir=DIFFUSERS_CACHE_DIR,
+            variant = variant
         )
 
     unet = UNet2DConditionModel.from_pretrained(
@@ -70,9 +73,10 @@ def load_diffusers_model(
         subfolder="unet",
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
+        variant = variant
     )
     
-    vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae")
+    vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae", variant = variant)
 
     return tokenizer, text_encoder, unet, vae
 
@@ -82,12 +86,14 @@ def load_checkpoint_model(
     v2: bool = False,
     clip_skip: Optional[int] = None,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[CLIPTokenizer, CLIPTextModel, UNet2DConditionModel,]:
-    pipe = StableDiffusionPipeline.from_ckpt(
+    pipe = StableDiffusionPipeline.from_pretrained(
         checkpoint_path,
         upcast_attention=True if v2 else False,
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
+        variant = variant
     )
 
     unet = pipe.unet
@@ -111,16 +117,17 @@ def load_models(
     v2: bool = False,
     v_pred: bool = False,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[CLIPTokenizer, CLIPTextModel, UNet2DConditionModel, SchedulerMixin,]:
     if pretrained_model_name_or_path.endswith(
         ".ckpt"
     ) or pretrained_model_name_or_path.endswith(".safetensors"):
         tokenizer, text_encoder, unet, vae = load_checkpoint_model(
-            pretrained_model_name_or_path, v2=v2, weight_dtype=weight_dtype
+            pretrained_model_name_or_path, v2=v2, weight_dtype=weight_dtype, variant=variant
         )
     else:  # diffusers
         tokenizer, text_encoder, unet, vae = load_diffusers_model(
-            pretrained_model_name_or_path, v2=v2, weight_dtype=weight_dtype
+            pretrained_model_name_or_path, v2=v2, weight_dtype=weight_dtype, variant=variant
         )
 
     # VAE はいらない
@@ -136,6 +143,7 @@ def load_models(
 def load_diffusers_model_xl(
     pretrained_model_name_or_path: str,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[list[CLIPTokenizer], list[SDXL_TEXT_ENCODER_TYPE], UNet2DConditionModel,]:
     # returns tokenizer, tokenizer_2, text_encoder, text_encoder_2, unet
 
@@ -161,12 +169,14 @@ def load_diffusers_model_xl(
             subfolder="text_encoder",
             torch_dtype=weight_dtype,
             cache_dir=DIFFUSERS_CACHE_DIR,
+            variant = variant
         ),
         CLIPTextModelWithProjection.from_pretrained(
             pretrained_model_name_or_path,
             subfolder="text_encoder_2",
             torch_dtype=weight_dtype,
             cache_dir=DIFFUSERS_CACHE_DIR,
+            variant = variant
         ),
     ]
 
@@ -175,19 +185,22 @@ def load_diffusers_model_xl(
         subfolder="unet",
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
+        variant = variant
     )
-    vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae")
+    vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae", variant = variant)
     return tokenizers, text_encoders, unet, vae
 
 
 def load_checkpoint_model_xl(
     checkpoint_path: str,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[list[CLIPTokenizer], list[SDXL_TEXT_ENCODER_TYPE], UNet2DConditionModel,]:
     pipe = StableDiffusionXLPipeline.from_single_file(
         checkpoint_path,
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
+        variant = variant
     )
 
     unet = pipe.unet
@@ -205,6 +218,7 @@ def load_models_xl(
     pretrained_model_name_or_path: str,
     scheduler_name: AVAILABLE_SCHEDULERS,
     weight_dtype: torch.dtype = torch.float32,
+    variant: Optional[str] = None
 ) -> tuple[
     list[CLIPTokenizer],
     list[SDXL_TEXT_ENCODER_TYPE],
@@ -219,14 +233,14 @@ def load_models_xl(
             text_encoders,
             unet,
             vae
-        ) = load_checkpoint_model_xl(pretrained_model_name_or_path, weight_dtype)
+        ) = load_checkpoint_model_xl(pretrained_model_name_or_path, weight_dtype, variant)
     else:  # diffusers
         (
             tokenizers,
             text_encoders,
             unet,
             vae
-        ) = load_diffusers_model_xl(pretrained_model_name_or_path, weight_dtype)
+        ) = load_diffusers_model_xl(pretrained_model_name_or_path, weight_dtype, variant)
 
     scheduler = create_noise_scheduler(scheduler_name)
 
