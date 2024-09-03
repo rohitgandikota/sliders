@@ -1,6 +1,6 @@
 # Concept Sliders
 ###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2311.12092.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/) | [Colab Demo](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb) | [Huggingface Demo](https://huggingface.co/spaces/baulab/ConceptSliders) <br>
-Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models"
+Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models", European Conference on Computer Vision (ECCV 2024).
 
 <div align='center'>
 <img src = 'images/main_figure.png'>
@@ -89,10 +89,11 @@ Our user community is amazing! Here is the resource that integrates ControlNet: 
 ## Citing our work
 The preprint can be cited as follows
 ```
-@article{gandikota2023sliders,
-  title={Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models},
+@inproceedings{gandikota2023erasing,
+  title={Erasing Concepts from Diffusion Models},
   author={Rohit Gandikota and Joanna Materzy\'nska and Tingrui Zhou and Antonio Torralba and David Bau},
-  journal={arXiv preprint arXiv:2311.12092},
-  year={2023}
+  booktitle={Proceedings of the 2024 IEEE European Conference on Computer Vision},
+  note={arXiv preprint arXiv:2311.12092},
+  year={2024}
 }
 ```
