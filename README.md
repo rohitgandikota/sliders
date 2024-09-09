@@ -9,7 +9,7 @@ Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Cont
 ## Colab Demo
 Try out our colab demo here [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb)
 
-## FLUX Support
+## FLUX Support 🚀🚀🚀
 You can train sliders for FLUX-1 models. Right now it is experimental! Please be patient if it doesn't work as good as SDXL. FLUX is not designed the same way as SDXL. <br>
 
 To play with flux sliders you need to update your packages. 
