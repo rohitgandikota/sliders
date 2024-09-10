@@ -68,6 +68,8 @@ def train(
     ) = model_util.load_models_xl(
         config.pretrained_model.name_or_path,
         scheduler_name=config.train.noise_scheduler,
+        weight_dtype = weight_dtype,
+        variant= "fp16" if weight_dtype == torch.float16 else None
     )
 
     for text_encoder in text_encoders:
@@ -192,7 +194,7 @@ def train(
                 print("dynamic_crops:", prompt_pair.dynamic_crops)
 
             latents = train_util.get_initial_latents(
-                noise_scheduler, prompt_pair.batch_size, height, width, 1
+                noise_scheduler, prompt_pair.batch_size, height, width, 1, device
             ).to(device, dtype=weight_dtype)
 
             add_time_ids = train_util.get_add_time_ids(
