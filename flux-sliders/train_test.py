@@ -116,7 +116,7 @@ weight_dtype = torch.bfloat16
 
 device = "cuda:0"
 
-max_train_steps = 3000
+max_train_steps = 1000
 save_every = 100
 
 
@@ -137,10 +137,10 @@ mode_scale = 1.29
 bsz = 1
 training_eta = 1
 # optimizer params
-lr = 0.005
+lr = 0.002
 
 
-slider_name = 'person-obese-custom-images'
+slider_name = 'person-obese-mod'
 output_dir = 'outputs/' + slider_name + '/'
 
 os.makedirs(output_dir, exist_ok=True)
@@ -239,6 +239,7 @@ def import_model_class_from_model_name_or_path(
         return T5EncoderModel
     else:
         raise ValueError(f"{model_class} is not supported.")
+
 def load_text_encoders(pretrained_model_name_or_path, class_one, class_two, weight_dtype):
     text_encoder_one = class_one.from_pretrained(
         pretrained_model_name_or_path, 
@@ -253,6 +254,7 @@ def load_text_encoders(pretrained_model_name_or_path, class_one, class_two, weig
         device_map=device
     )
     return text_encoder_one, text_encoder_two
+
 import matplotlib.pyplot as plt
 def plot_labeled_images(images, labels):
     # Determine the number of images
@@ -830,8 +832,8 @@ print('Training Done')
 
 
 # Save the trained LoRA model
-save_name = f"flux-{slider_name}"
-save_path = f'{output_dir}/{save_name}/'
+
+save_path = f'{output_dir}/'
 os.makedirs(save_path, exist_ok=True)
 
 
