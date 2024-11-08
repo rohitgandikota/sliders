@@ -6,6 +6,7 @@ from diffusers import AutoencoderKL, FlowMatchEulerDiscreteScheduler, FluxTransf
 from transformers import CLIPTokenizer, T5TokenizerFast, PretrainedConfig
 from utils.lora import LoRANetwork
 from utils.custom_flux_pipeline import FluxPipeline
+import safetensors.torch
 
 
 def import_model_class_from_model_name_or_path(
@@ -111,15 +112,45 @@ def run_inference(
     lora_files = sorted(Path(lora_path).glob("slider_*.pt"))
     print(f'Loading {len(lora_files)} sliders from {lora_path}')
     for i, lora_file in enumerate(lora_files):
+        print(f"\nAnalyzing LoRA file: {lora_file}")
+        
+        # Load the state dict directly to inspect it
+        state_dict = torch.load(str(lora_file))
+        
+        # Print structure and values
+        print("\nLoRA Weights Analysis:")
+        for key, tensor in state_dict.items():
+            if 'lora_up' in key or 'lora_down' in key:
+                print(f"\nLayer: {key}")
+                print(f"Shape: {tensor.shape}")
+                print(f"Value range: {tensor.min().item():.6f} to {tensor.max().item():.6f}")
+                print(f"Mean value: {tensor.mean().item():.6f}")
+                print(f"Standard deviation: {tensor.std().item():.6f}")
+        
+        # Load into network as before
         networks[i] = LoRANetwork(
             transformer,
-            rank=16,  # These values should match your training configuration
+            rank=16,
             multiplier=1.0,
             alpha=1,
             train_method='xattn'
         )
-        networks[i].load_state_dict(torch.load(str(lora_file)))
+        networks[i].load_state_dict(state_dict)
         networks[i].to(device, dtype=weight_dtype)
+
+        # Print effective weights at different scales
+        print("\nEffective weights at different scales:")
+        for scale in [-5, -1, 0, 1, 5]:
+            networks[i].set_lora_slider(scale=scale)
+            print(f"\nScale: {scale}")
+            for name, module in networks[i].named_modules():
+                if hasattr(module, 'lora_up') and hasattr(module, 'lora_down'):
+                    up_weight = module.lora_up.weight.data
+                    down_weight = module.lora_down.weight.data
+                    effective_weight = scale * (up_weight @ down_weight) / module.rank
+                    print(f"Module: {name}")
+                    print(f"Effective weight range: {effective_weight.min().item():.6f} to {effective_weight.max().item():.6f}")
+                    print(f"Effective weight mean: {effective_weight.mean().item():.6f}")
 
     # Generate images
     os.makedirs(output_dir, exist_ok=True)
