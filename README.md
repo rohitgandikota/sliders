@@ -2,6 +2,8 @@
 ###  [Project Website](https://sliders.baulab.info) | [Arxiv Preprint](https://arxiv.org/pdf/2311.12092.pdf) | [Trained Sliders](https://sliders.baulab.info/weights/xl_sliders/) | [Colab Demo](https://colab.research.google.com/github/rohitgandikota/sliders/blob/main/demo_concept_sliders.ipynb) | [Huggingface Demo](https://huggingface.co/spaces/baulab/ConceptSliders) <br>
 Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Control in Diffusion Models", European Conference on Computer Vision (ECCV 2024).
 
+## 🎉 NEW: SliderSpace 🎉
+Experience the next evolution in concept control! **SliderSpace** automatically extracts hundreds of sliders from diffusion models' creative knowledge - no training required! Unlock unprecedented creativity with zero effort. [Check out SliderSpace repo](https://github.com/baulab/sliderspace) 🚀🎨✨
 <div align='center'>
 <img src = 'images/main_figure.png'>
 </div>
