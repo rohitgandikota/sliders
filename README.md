@@ -4,7 +4,7 @@ Official code implementation of "Concept Sliders: LoRA Adaptors for Precise Cont
 
 ## 🎉 LATEST UPDATE: SliderSpace 🎉
 Experience the next evolution in concept sliders! **SliderSpace** automatically extracts hundreds of sliders from diffusion models' creative knowledge - no training required! Unlock unprecedented creativity with zero effort.  <br> 
-[Check out SliderSpace repo](https://github.com/baulab/sliderspace) 🚀🎨✨
+[Check out SliderSpace repo](https://github.com/rohitgandikota/sliderspace) 🚀🎨✨
 <div align='center'>
 <img src = 'images/main_figure.png'>
 </div>
