@@ -50,7 +50,7 @@ TRAINING_METHODS = Literal[
 ]
 
 def load_ortho_dict(n):
-    path = f'~/orthogonal_basis/{n:09}.ckpt'
+    path = f'/home/ubuntu/orthogonal_basis/{n:09}.ckpt'
     if os.path.isfile(path):
         return torch.load(path)
     else:
