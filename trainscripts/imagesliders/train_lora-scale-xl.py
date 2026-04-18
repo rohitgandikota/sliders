@@ -80,6 +80,8 @@ def train(
     ) = model_util.load_models_xl(
         config.pretrained_model.name_or_path,
         scheduler_name=config.train.noise_scheduler,
+        weight_dtype = weight_dtype,
+        variant= "fp16" if weight_dtype == torch.float16 else None
     )
 
     for text_encoder in text_encoders:

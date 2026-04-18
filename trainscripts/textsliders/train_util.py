@@ -18,7 +18,7 @@ UNET_PROJECTION_CLASS_EMBEDDING_INPUT_DIM = 2816
 
 
 def get_random_noise(
-    batch_size: int, height: int, width: int, generator: torch.Generator = None
+    batch_size: int, height: int, width: int, device: torch.device, generator: torch.Generator = None
 ) -> torch.Tensor:
     return torch.randn(
         (
@@ -27,8 +27,8 @@ def get_random_noise(
             height // VAE_SCALE_FACTOR,  # 縦と横これであってるのかわからないけど、どっちにしろ大きな問題は発生しないのでこれでいいや
             width // VAE_SCALE_FACTOR,
         ),
-        generator=generator,
-        device="cpu",
+        device=device,
+        generator=generator
     )
 
 
@@ -46,13 +46,14 @@ def get_initial_latents(
     height: int,
     width: int,
     n_prompts: int,
-    generator=None,
+    device: torch.device,
+    generator=None
 ) -> torch.Tensor:
-    noise = get_random_noise(n_imgs, height, width, generator=generator).repeat(
+    noise = get_random_noise(n_imgs, height, width, device, generator=generator).repeat(
         n_prompts, 1, 1, 1
     )
 
-    latents = noise * scheduler.init_noise_sigma
+    latents = noise * torch.tensor(scheduler.init_noise_sigma).to(device)
 
     return latents
 
